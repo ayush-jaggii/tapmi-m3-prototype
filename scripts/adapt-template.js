@@ -148,10 +148,16 @@ const helveticaOverride = `
   }
 
   .nav__logo img {
-    height: 30px !important;
+    height: 44px !important;
+    max-height: 46px !important;
     width: auto !important;
     object-fit: contain !important;
     display: block !important;
+  }
+  @media (max-width: 900px) {
+    .nav__logo img {
+      height: 36px !important;
+    }
   }
   .foot__brand img {
     height: 36px !important;
@@ -178,7 +184,7 @@ const navNewHtml = `<header id="nav" data-8b-section="navigation">
 ${bannerHtml}
   <div class="wrap nav__bar">
     <a class="nav__logo" href="#hero" aria-label="TAPMI Executive Education, student project" style="display:flex;align-items:center;gap:12px;text-decoration:none">
-      <img src="assets/brand/tapmi-logo.webp" alt="TAPMI Logo" width="130" height="34" style="height:32px;width:auto;display:block">
+      <img src="assets/brand/tapmi-logo.webp" alt="TAPMI Logo" width="170" height="44" style="height:44px;width:auto;display:block">
       
     </a>
     <nav aria-label="Main">
