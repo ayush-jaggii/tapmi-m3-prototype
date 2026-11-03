@@ -33,6 +33,7 @@ const filesToInclude = [
   'assets/brand/professional-office-laptop.jpg',
   'assets/brand/strategy-meeting-leadership.jpg',
   'assets/brand/corporate-team-celebration.jpg',
+  'assets/brand/professional-office-desk.jpg',
   'robots.txt',
   'vercel.json',
   'css/style.css',
