@@ -26,6 +26,7 @@ const filesToInclude = [
   'cert-b2b.html',
   '404.html',
   'assets/brand/tapmi-logo.svg',
+  'assets/brand/tapmi-logo.webp',
   'assets/brand/tapmi-logo-white.svg',
   'assets/brand/accredations-logo.svg',
   'assets/brand/accredations-logo-white.svg',

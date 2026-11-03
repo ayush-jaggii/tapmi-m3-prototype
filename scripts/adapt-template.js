@@ -178,7 +178,7 @@ const navNewHtml = `<header id="nav" data-8b-section="navigation">
 ${bannerHtml}
   <div class="wrap nav__bar">
     <a class="nav__logo" href="#hero" aria-label="TAPMI Executive Education, student project" style="display:flex;align-items:center;gap:12px;text-decoration:none">
-      <img src="assets/brand/tapmi-logo.svg" alt="TAPMI Logo" width="130" height="28" style="height:28px;width:auto;display:block">
+      <img src="assets/brand/tapmi-logo.webp" alt="TAPMI Logo" width="130" height="34" style="height:32px;width:auto;display:block">
       
     </a>
     <nav aria-label="Main">
