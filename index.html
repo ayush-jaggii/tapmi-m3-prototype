@@ -1058,14 +1058,14 @@ select.m-field__control { appearance: none; padding-right: 44px; background-imag
 #carry .diff__row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 0.8fr); border-bottom: 1px solid var(--color-12); overflow-x: clip; }
 #carry .diff__old, #carry .diff__new { position: relative; display: flex; align-items: center; gap: 18px; min-height: 104px; padding: 22px 28px; }
 #carry .diff__old { background: color-mix(in oklab, var(--color-6) 13%, var(--color-1)); }
-#carry .diff__role { position: relative; }
+#carry .diff__role { position: relative; display: inline-block; padding-bottom: 6px; }
 #carry .diff__old .diff__role { color: var(--color-3); }
 #carry .diff__new { background: var(--color-10); clip-path: inset(0 0 0 0); }
 #carry .diff__sign { position: relative; flex: none; width: 26px; height: 26px; border-radius: 3px; background: var(--color-6); }
 #carry .diff__sign::before, #carry .diff__new .diff__sign::after { content: ""; position: absolute; left: 6px; right: 6px; top: 12px; height: 2px; background: var(--color-11); }
 #carry .diff__new .diff__sign { background: var(--color-7); }
 #carry .diff__new .diff__sign::after { transform: rotate(90deg); }
-#carry .diff__strike { display: none !important; }
+#carry .diff__strike { position: absolute; left: 0; right: 0; bottom: 0; top: auto; height: 2px; background: var(--color-4); transform-origin: 0 50%; }
 #carry .diff__kept { display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 22px 28px; }
 #carry .diff__kept .m-text-4 { color: var(--color-2); }
 @media (max-width: 900px) {
