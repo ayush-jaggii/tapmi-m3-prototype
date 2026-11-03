@@ -37,6 +37,7 @@ const filesToInclude = [
   'assets/brand/conference-speaker-podium.jpg',
   'assets/brand/cloned-audience-lecture-hall.jpg',
   'assets/brand/executive-portrait-modern-office.jpg',
+  'assets/brand/weekday-synthesis-reading.jpg',
   'robots.txt',
   'vercel.json',
   'css/style.css',
