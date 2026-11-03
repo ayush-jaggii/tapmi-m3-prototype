@@ -28,7 +28,7 @@ Loaded from Unsplash under the free commercial Unsplash License.
 |---|---|---|---|
 | Hero | Indian corporate executive businesswoman in modern workspace | Unsplash (`photo-1758518729466-827cd8293992`) | Illustrative opening visual |
 | Curriculum 1 | Executive professional in office with laptop | Custom upload | Stage 1: Business Foundations |
-| Curriculum 2 | Indian business leaders in strategic boardroom discussion | Unsplash (`photo-1577962917302-cd874c4e31d2`) | Stage 2: People & Leadership |
+| Curriculum 2 | Executive team in strategic leadership meeting | Custom upload | Stage 2: People & Leadership |
 | Curriculum 3 | Indian cross-functional team in executive conference room | Unsplash (`photo-1776248783518-400b6d0da64c`) | Stage 3: Cross-Functional Decisions |
 | Curriculum 4 | Indian professional evaluating live pilot telemetry on laptop | Unsplash (`photo-1762341116897-921e2a52f7ff`) | Stage 4: Workplace Application |
 | Curriculum 5 | Indian executive presenting capstone defense at corporate symposium | Unsplash (`photo-1775113586139-b583cc93517f`) | Stage 5: Review & Reflection |

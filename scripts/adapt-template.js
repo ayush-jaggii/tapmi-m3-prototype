@@ -323,7 +323,7 @@ const courseNewHtml = `<section id="course" data-8b-section="curriculum" aria-la
             <p class="m-text">Organizational culture, executive negotiation, and leading high-performance cross-functional teams through complex change.</p>
             <p class="mod__build"><span class="m-text-4">You build</span><span class="m-text">A team transformation blueprint and change governance framework.</span></p>
           </div>
-          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?auto=format&fit=crop&w=590&q=80" width="590" height="393" alt="Indian executive team in strategic leadership discussion" loading="lazy"></figure>
+          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="assets/brand/strategy-meeting-leadership.jpg" width="590" height="393" alt="Executive team in strategic leadership meeting" loading="lazy"></figure>
         </li>
         <li class="mod mod--3">
           <div class="mod__planes" aria-hidden="true"><span class="mod__plane"></span><span class="mod__plane mod__plane--2"></span></div>
