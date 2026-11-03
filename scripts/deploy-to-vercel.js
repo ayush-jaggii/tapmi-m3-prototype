@@ -30,6 +30,7 @@ const filesToInclude = [
   'assets/brand/accredations-logo.svg',
   'assets/brand/accredations-logo-white.svg',
   'assets/brand/mahebengaluru-campus.jpg',
+  'assets/brand/professional-office-laptop.jpg',
   'robots.txt',
   'vercel.json',
   'css/style.css',

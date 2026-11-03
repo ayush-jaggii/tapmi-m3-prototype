@@ -313,7 +313,7 @@ const courseNewHtml = `<section id="course" data-8b-section="curriculum" aria-la
             <p class="m-text">Financial decision analysis, economic strategy, and managerial accounting applied directly to enterprise capital allocation.</p>
             <p class="mod__build"><span class="m-text-4">You build</span><span class="m-text">An enterprise capital allocation and financial health model.</span></p>
           </div>
-          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="https://images.unsplash.com/photo-1770626894265-bdb99db109f1?auto=format&fit=crop&w=590&q=80" width="590" height="393" alt="Indian executive businesswoman analyzing financial metrics on laptop" loading="lazy"></figure>
+          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="assets/brand/professional-office-laptop.jpg" width="590" height="393" alt="Executive professional in office with laptop" loading="lazy"></figure>
         </li>
         <li class="mod mod--2">
           <div class="mod__planes" aria-hidden="true"><span class="mod__plane"></span><span class="mod__plane mod__plane--2"></span></div>
