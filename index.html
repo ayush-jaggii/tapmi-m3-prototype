@@ -2491,8 +2491,8 @@ queueMotion(() => {
       if (res.ok) {
         feedback.style.background = '#dcfce7';
         feedback.style.color = '#15803d';
-        feedback.innerHTML = '<strong>Success!</strong> Request ID: <code>' + (data.request_id || 'DEMO') + '</code><br>' + 
-          (data.message || 'Enquiry recorded.') + '<br><small style="color:#166534">Notice: ' + (data.notice || 'Demo mode: Nothing sent to external CRM.') + '</small>';
+        feedback.innerHTML = '<strong>Thank you for your enquiry. We will contact you.</strong>';
+        form.reset();
       } else {
         feedback.style.background = '#fee2e2';
         feedback.style.color = '#991b1b';

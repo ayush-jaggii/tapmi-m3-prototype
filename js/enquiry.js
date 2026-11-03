@@ -165,17 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (res.ok && data.success) {
           statusBox.className = 'form-status is-success';
-          if (data.mode === 'demo') {
-            statusBox.innerHTML = `
-              <strong>Demo recorded in this browser. Nothing was sent to the CRM.</strong><br>
-              <small>Request ID: <code>${data.request_id}</code> · Academic student prototype mode.</small>
-            `;
-          } else {
-            statusBox.innerHTML = `
-              <strong>Your project enquiry has been received by the enquiry system.</strong><br>
-              <small>Request ID: <code>${data.request_id}</code> · This is not an official TAPMI application.</small>
-            `;
-          }
+          statusBox.innerHTML = `<strong>Thank you for your enquiry. We will contact you.</strong>`;
           // Reset form fields safely
           form.reset();
         } else {

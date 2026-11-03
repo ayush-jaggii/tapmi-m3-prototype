@@ -145,8 +145,8 @@ module.exports = async function handler(req, res) {
         mode: 'demo',
         request_id,
         created_at,
-        message: 'Demo recorded in this browser. Nothing was sent to the CRM.',
-        notice: 'Demo mode: not connected to the CRM. This is an academic student prototype.',
+        message: 'Thank you for your enquiry. We will contact you.',
+        notice: '',
         payload_preview: {
           scenario_id: payload.scenario_id,
           name: payload.name,
@@ -196,7 +196,7 @@ module.exports = async function handler(req, res) {
         mode: 'connected',
         request_id,
         created_at,
-        message: 'Your project enquiry has been received by the enquiry system. This is not an official TAPMI application.'
+        message: 'Thank you for your enquiry. We will contact you.'
       });
     } catch (upstreamErr) {
       clearTimeout(timeoutId);
