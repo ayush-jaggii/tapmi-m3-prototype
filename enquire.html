@@ -1,0 +1,207 @@
+<!doctype html>
+<!--
+  Group 4 Academic Student Project — TAPMI Executive Education Prototype
+  Dedicated Project Enquiry Route
+  DISCLAIMER: Student project, not an official TAPMI offering.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project Enquiry | TAPMI Executive Education (Student Project)</title>
+<meta name="description" content="Submit a project enquiry for proposed TAPMI executive education offers. Academic student prototype demonstrating campaign-to-enquiry pipeline.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23111D30'%2F%3E%3Ctext%20x%3D'32'%20y%3D'44'%20font-family%3D'Arial%2Csans-serif'%20font-size%3D'34'%20font-weight%3D'700'%20text-anchor%3D'middle'%20fill%3D'%23F58232'%3ET%3C%2Ftext%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<aside class="notice-bar" role="note" aria-label="Student project disclaimer">
+  <span><strong>Student project, not an official TAPMI offering.</strong> Proposed offers and fees for academic evaluation.</span>
+  <a href="/about.html">About this project</a>
+  <button type="button" class="notice-bar__close" aria-label="Dismiss disclaimer" onclick="this.closest('.notice-bar').remove();">&times;</button>
+</aside>
+
+<header id="nav">
+  <div class="wrap nav__bar">
+    <a class="nav__logo" href="/" aria-label="TAPMI executive education student project home" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+      <img src="assets/brand/tapmi-logo.svg" alt="TAPMI Logo" width="130" height="28" style="height:28px;width:auto;display:block">
+      
+    </a>
+    <nav class="nav__links" aria-label="Primary Navigation">
+      <a class="nav__link" href="/">Home</a>
+      <a class="nav__link" href="/organisations.html">For organisations</a>
+      <a class="nav__link" href="/emba-b2c.html">For individuals</a>
+      <a class="nav__link" href="/resources.html">Resources</a>
+      <a class="nav__link" href="/about.html">About</a>
+    </nav>
+    <a class="m-btn nav__cta" href="/enquire.html" aria-current="page"><span class="m-btn__label">Enquire</span></a>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+  </div>
+
+  <div id="menu" class="menu" hidden>
+    <div class="menu__top">
+      <img src="assets/brand/tapmi-logo-white.svg" alt="TAPMI Logo" width="120" height="26" style="height:26px;width:auto;display:block">
+      <button class="menu__close" type="button">Close</button>
+    </div>
+    <nav class="menu__links" aria-label="Mobile Navigation">
+      <a href="/">Home</a>
+      <a href="/organisations.html">For organisations</a>
+      <a href="/emba-b2b.html">Sponsored EMBA (B2B)</a>
+      <a href="/mdp-b2b.html">Customised MDP (B2B)</a>
+      <a href="/emba-b2c.html">Executive MBA (B2C)</a>
+      <a href="/resources.html">Resources &amp; Manifest</a>
+      <a href="/enquire.html">Project Enquiry</a>
+      <a href="/about.html">About &amp; Privacy</a>
+    </nav>
+    <p class="menu__subline">Group 4 Business Marketing academic prototype. For academic review only.</p>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap" style="padding-top:48px; padding-bottom:64px;">
+    <div style="max-width:800px; margin:0 auto;">
+      <span class="m-badge m-badge--notice">Campaign-to-Enquiry Journey</span>
+      <h1 class="m-text-2" style="margin-top:16px; margin-bottom:12px;">Tell us what you are looking for</h1>
+      <p class="m-text-6" style="color:var(--color-3); margin-bottom:24px;">This is an academic-project enquiry, not a TAPMI application. Please use dummy details for demonstrations. Do not enter confidential company information.</p>
+
+      <div class="disclaimer-box" role="note">
+        <strong>Academic Evaluation Notice:</strong> Programme designs, fees and services shown here are student proposals for academic evaluation. They are not approved TAPMI offers or an invitation to enrol.
+      </div>
+
+      <!-- Quick Fixture Autofill Helper -->
+      <div class="m-surface" style="padding:20px; margin:28px 0; background:var(--color-10); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div>
+          <strong style="font-size:14px; color:var(--color-7);">Evaluator Synthetic Fixtures:</strong>
+          <p class="m-text-5" style="font-size:13px; margin-top:2px;">Pre-fill the form with standard synthetic test profiles:</p>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap;">
+          <button type="button" class="m-btn-2 btn-test-fill" style="min-height:36px; padding:0 14px; font-size:12px; color:var(--color-7); border-color:var(--color-7);">Fill Demo Sponsor (B2B)</button>
+        </div>
+      </div>
+
+      <!-- Main Enquiry Form -->
+      <div class="m-surface contact__form" style="padding:clamp(28px, 5vw, 48px); box-shadow:0 16px 40px rgba(17, 29, 48, 0.08);">
+        <div class="contact__form-head">
+          <div class="demo-mode-notice is-demo">Demo mode: not connected to the CRM</div>
+          <h2 class="m-text-7" style="font-size:22px; margin-top:8px;">Project Enquiry</h2>
+        </div>
+
+        <form class="enquiry-form" action="/api/enquiry" method="post">
+          <label class="m-field">
+            <span class="m-field__label">Programme Scenario *</span>
+            <select class="m-field__control" name="scenario_id" required>
+              <option value="emba_b2b">Executive MBA: Sponsored Leadership Pathway (B2B)</option>
+              <option value="mdp_b2b">TAPMI Execution Leadership Accelerator (MDP B2B)</option>
+              <option value="emba_b2c">Executive MBA: From Functional Expert to Business Leader (B2C)</option>
+              <option value="cert_b2c">Optional: Certificate in AI for Business Applications (B2C)</option>
+              <option value="cert_b2b">Optional: Enterprise Certificate in AI for Business Applications (B2B)</option>
+            </select>
+          </label>
+
+          <label class="m-field">
+            <span class="m-field__label">Full Name *</span>
+            <input class="m-field__control" name="name" type="text" autocomplete="name" required placeholder="e.g. Demo Sponsor">
+          </label>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            <label class="m-field">
+              <span class="m-field__label label-email">Work Email / Email *</span>
+              <input class="m-field__control" name="email" type="email" autocomplete="email" required placeholder="name@example.com">
+            </label>
+            <label class="m-field">
+              <span class="m-field__label">Phone (Optional)</span>
+              <input class="m-field__control" name="phone_optional" type="tel" autocomplete="tel" placeholder="+91 98765 00000">
+            </label>
+          </div>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            <label class="m-field">
+              <span class="m-field__label">Organisation Name</span>
+              <input class="m-field__control" name="organisation" type="text" placeholder="e.g. Enterprise GCC / Technology Firm">
+            </label>
+            <label class="m-field">
+              <span class="m-field__label">Job Role</span>
+              <input class="m-field__control" name="job_role" type="text" placeholder="e.g. Talent Lead / Senior Manager">
+            </label>
+          </div>
+
+          <div class="field-b2b">
+            <label class="m-field">
+              <span class="m-field__label">Proposed Participant Count</span>
+              <select class="m-field__control" name="participant_count">
+                <option value="1-2">1–2 participants (Single seat sponsorship)</option>
+                <option value="3-4">3–4 participants (5% volume concession)</option>
+                <option value="5-9">5–9 participants (8% volume concession)</option>
+                <option value="10+">10+ participants (12% volume cap)</option>
+                <option value="20">20 participants (MDP cohort minimum)</option>
+                <option value="25+">25–30 participants (MDP dedicated cohort)</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="m-field">
+            <span class="m-field__label">What capability challenge or learning goal would you like to address?</span>
+            <textarea class="m-field__control" name="capability_need" rows="3" placeholder="Outline specific leadership transitions, execution bottlenecks, or capability goals..."></textarea>
+          </label>
+
+          <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
+            <label class="m-field">
+              <span class="m-field__label">Timeframe</span>
+              <select class="m-field__control" name="timeframe">
+                <option value="Exploring">Exploring</option>
+                <option value="Within 3 months">Within 3 months</option>
+                <option value="3-6 months">3–6 months</option>
+                <option value="Later">Later</option>
+              </select>
+            </label>
+            <label class="m-field">
+              <span class="m-field__label">Budget Band</span>
+              <select class="m-field__control" name="budget_band">
+                <option value="Around the proposed fee">Around the proposed fee</option>
+                <option value="Below the proposed fee">Below the proposed fee</option>
+                <option value="Above the proposed fee">Above the proposed fee</option>
+                <option value="Prefer to discuss">Prefer to discuss</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="m-checkbox" style="margin-top:12px;">
+            <input type="checkbox" name="consent" required>
+            <span>I agree that the student project team may use these details to review this enquiry and contact me about this academic prototype. I understand this is not an official TAPMI application.</span>
+          </label>
+
+          <button class="m-btn" type="submit" style="margin-top:16px;"><span class="m-btn__label">Test enquiry flow</span></button>
+          <div class="form-status" role="status" hidden></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer id="footer" data-8b-section="footer">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div>
+        <a class="foot__brand" href="/" aria-label="TAPMI executive education student project home" style="text-decoration:none">
+          <img src="assets/brand/tapmi-logo-white.svg" alt="TAPMI Logo" width="150" height="32" style="height:32px;width:auto;display:block;margin-bottom:12px">
+        </a>
+        <div class="foot__subline" style="font-size:12px;color:var(--color-3);font-weight:600;text-transform:uppercase;letter-spacing:0.04em">Executive Education · Student Project</div>
+        <div style="margin-top:14px;padding-top:10px;border-top:1px solid rgba(255,255,255,0.15)">
+          <p style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--color-3);margin-bottom:6px">TAPMI Institutional Accreditations</p>
+          <img src="assets/brand/accredations-logo-white.svg" alt="TAPMI Accreditations" width="130" height="22" style="height:22px;width:auto;opacity:0.95;display:block">
+        </div>
+
+    <div class="foot__legal">
+      <span>Group 4 Business Marketing · Student Prototype · Design inspired by 8B (MIT License)</span>
+      <span>© 2026 Academic Evaluation</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/js/config.js"></script>
+<script src="/js/motion.js"></script>
+<script src="/js/enquiry.js"></script>
+</body>
+</html>

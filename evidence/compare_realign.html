@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background: #111D30; color: #fff; font-family: sans-serif; padding: 40px; display: flex; gap: 40px; }
+.card { display: flex; flex-direction: column; align-items: center; }
+.frame { width: 320px; height: 460px; border-radius: 20px; overflow: hidden; background: #000; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+.frame img { width: 100%; height: 100%; object-fit: cover; }
+.img-realigned { object-position: 76% 20%; }
+.img-cand3 { object-position: center top; }
+h3 { margin-bottom: 12px; font-weight: 500; font-size: 16px; }
+</style>
+</head>
+<body>
+<div class='card'>
+  <h3>Option A: Re-aligned Current Image (76% 20%)</h3>
+  <div class='frame'>
+    <img class='img-realigned' src='https://images.unsplash.com/photo-1758518729466-827cd8293992?auto=format&fit=crop&w=800&q=80'>
+  </div>
+</div>
+<div class='card'>
+  <h3>Option B: Premium Vertical Indian Executive Portrait</h3>
+  <div class='frame'>
+    <img class='img-cand3' src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80'>
+  </div>
+</div>
+</body>
+</html>

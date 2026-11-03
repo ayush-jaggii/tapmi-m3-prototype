@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TAPMI Student Project Enquiry Payload Contract",
+  "description": "Proposed JSON contract for Group 4 CRM integration (Ayush -> Apps Script -> Benjamin's Google Sheet -> CRM). Unverified until confirmed by Benjamin.",
+  "type": "object",
+  "required": [
+    "request_id",
+    "created_at",
+    "scenario_id",
+    "buyer_type",
+    "name",
+    "email",
+    "consent",
+    "consent_version"
+  ],
+  "properties": {
+    "request_id": {
+      "type": "string",
+      "description": "Unique idempotent enquiry identifier (e.g., req_m4x123_a1b2c3d4)",
+      "pattern": "^req_[a-z0-9_]+$"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 UTC timestamp of submission"
+    },
+    "scenario_id": {
+      "type": "string",
+      "enum": [
+        "emba_b2b",
+        "mdp_b2b",
+        "emba_b2c",
+        "cert_b2b",
+        "cert_b2c"
+      ],
+      "description": "Selected campaign scenario identifier"
+    },
+    "buyer_type": {
+      "type": "string",
+      "enum": [
+        "B2B_Organisation",
+        "B2C_Individual"
+      ],
+      "description": "Mapped high-level buyer classification"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 100,
+      "description": "Contact person name (formula escaped with leading single-quote if needed)"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "maxLength": 120,
+      "description": "Work email for B2B or personal email for B2C"
+    },
+    "phone_optional": {
+      "type": "string",
+      "maxLength": 30,
+      "description": "Optional telephone or mobile number"
+    },
+    "preferred_contact": {
+      "type": "string",
+      "enum": ["email", "phone"],
+      "default": "email"
+    },
+    "organisation": {
+      "type": "string",
+      "maxLength": 150,
+      "description": "Company, GCC, or organisation name (B2B) or current employer (B2C)"
+    },
+    "job_role": {
+      "type": "string",
+      "maxLength": 100,
+      "description": "Designation or functional title"
+    },
+    "participant_count": {
+      "type": "string",
+      "maxLength": 20,
+      "description": "Proposed cohort size (e.g., '1-2', '4', '25', or '1')"
+    },
+    "capability_need": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Specific management challenge, capability gap, or learning goal"
+    },
+    "timeframe": {
+      "type": "string",
+      "enum": [
+        "Within 3 months",
+        "3-6 months",
+        "Later",
+        "Exploring"
+      ],
+      "description": "Prospective interest horizon (not an agreed course start date)"
+    },
+    "budget_band": {
+      "type": "string",
+      "enum": [
+        "Below the proposed fee",
+        "Around the proposed fee",
+        "Above the proposed fee",
+        "Prefer to discuss"
+      ],
+      "description": "Indicative budget alignment"
+    },
+    "message": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Optional open text notes or questions"
+    },
+    "consent": {
+      "type": "boolean",
+      "const": true,
+      "description": "Explicit affirmative checkbox acknowledging academic student project prototype status"
+    },
+    "consent_version": {
+      "type": "string",
+      "description": "Version of the consent disclaimer text presented to the user"
+    },
+    "is_test": {
+      "type": "boolean",
+      "description": "Flags synthetic demo submissions, automated tests, or @example.com test leads"
+    },
+    "source_page": {
+      "type": "string",
+      "description": "Originating URL pathname (e.g. /emba-b2b.html)"
+    },
+    "utm_source": { "type": "string" },
+    "utm_medium": { "type": "string" },
+    "utm_campaign": { "type": "string" },
+    "utm_content": { "type": "string" },
+    "utm_term": { "type": "string" }
+  }
+}
