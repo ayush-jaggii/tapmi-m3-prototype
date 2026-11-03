@@ -265,18 +265,14 @@ select.m-field__control { appearance: none; padding-right: 44px; background-imag
 
 /* Mentors / Stakeholder Alignment (#mentors) */
 #mentors { padding: var(--space-2) 0; background: var(--color-10); }
-#mentors .mentors__head { margin-bottom: 56px; max-width: 800px; }
-#mentors .mentors__grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: var(--space-1); align-items: start; }
-#mentors .viewer { position: sticky; top: 120px; height: 460px; border-radius: var(--radius-1); overflow: hidden; box-shadow: 0 16px 36px rgba(17, 29, 48, 0.1); }
-#mentors .viewer__shot { position: absolute; inset: 0; margin: 0; }
-#mentors .viewer__shot img { width: 100%; height: 100%; object-fit: cover; }
-#mentors .mentors__list { display: grid; gap: 48px; }
-#mentors .mentor { background: var(--color-11); padding: 36px; border-radius: var(--radius-1); border: 1px solid var(--color-12); }
-#mentors .mentor h3 { margin-bottom: 8px; }
-#mentors .mentor__path { display: grid; gap: 8px; margin: 16px 0; }
-#mentors .mentor__path div { display: flex; gap: 12px; }
-#mentors .mentor__path dt { color: var(--color-3); min-width: 44px; }
-#mentors .mentor .m-badge { margin-top: 20px; }
+#mentors .mentors__head { margin-bottom: 52px; max-width: 860px; }
+#mentors .mentors__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+#mentors .mentor-card { background: var(--color-11); border-radius: var(--radius-1); border: 1px solid var(--color-12); padding: clamp(28px, 3vw, 36px); display: flex; flex-direction: column; justify-content: space-between; transition: border-color 0.25s, transform 0.25s; }
+#mentors .mentor-card:hover { border-color: var(--color-4); transform: translateY(-3px); }
+#mentors .mentor__path { display: grid; gap: 10px; width: 100%; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid color-mix(in oklab, var(--color-2) 12%, transparent); }
+#mentors .mentor__path div { display: grid; grid-template-columns: 56px 1fr; gap: 12px; align-items: baseline; }
+#mentors .mentor__path dt { color: var(--color-4); }
+#mentors .mentor-card .m-text-5 { color: var(--color-3); line-height: 1.6; }
 
 /* Capstones / Programmes Stacking Cards (#projects) */
 #projects { padding: var(--space-2) 0; }
@@ -457,8 +453,7 @@ select.m-field__control { appearance: none; padding-right: 44px; background-imag
   #hero .hero__say { left: var(--space-1); right: var(--space-1); top: 48%; }
   #carry .carry__head { grid-template-columns: 1fr; }
   #carry .diff__row { grid-template-columns: 1fr; gap: 8px; }
-  #mentors .mentors__grid { grid-template-columns: 1fr; }
-  #mentors .viewer { position: static; height: 300px; margin-bottom: 24px; }
+  #mentors .mentors__grid { grid-template-columns: 1fr; gap: 18px; }
   #projects .proj { grid-template-columns: 1fr; }
   #projects .proj__photo { height: 240px; min-height: auto; }
   #stories .story-log { grid-template-columns: 1fr; }
