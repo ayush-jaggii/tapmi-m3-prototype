@@ -32,6 +32,7 @@ const filesToInclude = [
   'assets/brand/mahebengaluru-campus.jpg',
   'assets/brand/professional-office-laptop.jpg',
   'assets/brand/strategy-meeting-leadership.jpg',
+  'assets/brand/corporate-team-celebration.jpg',
   'robots.txt',
   'vercel.json',
   'css/style.css',

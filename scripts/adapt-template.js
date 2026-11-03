@@ -333,7 +333,7 @@ const courseNewHtml = `<section id="course" data-8b-section="curriculum" aria-la
             <p class="m-text">Marketing strategy, supply chain synchronization, and technology-driven operating models aligned with market demand.</p>
             <p class="mod__build"><span class="m-text-4">You build</span><span class="m-text">A cross-department strategic alignment &amp; product-market canvas.</span></p>
           </div>
-          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="https://images.unsplash.com/photo-1776248783518-400b6d0da64c?auto=format&fit=crop&w=590&q=80" width="590" height="393" alt="Indian cross-functional corporate team in modern conference room" loading="lazy"></figure>
+          <figure class="mod__photo"><img style="background:#111D30;object-fit:cover;object-position:center;width:100%;height:100%;display:block" src="assets/brand/corporate-team-celebration.jpg" width="590" height="393" alt="Cross-functional corporate team collaboration" loading="lazy"></figure>
         </li>
         <li class="mod mod--4">
           <div class="mod__planes" aria-hidden="true"><span class="mod__plane"></span><span class="mod__plane mod__plane--2"></span></div>
