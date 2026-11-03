@@ -41,7 +41,7 @@ Loaded from Unsplash under the free commercial Unsplash License.
 | Stakeholders 4 | Indian academic director professor portrait | Unsplash (`photo-1758685734463-98672a67dd1c`) | The Academic Director perspective |
 | Capstone 1 | Modern warehouse logistics and multi-tier supply chain operations | Unsplash (`photo-1586528116311-ad8dd3c8310d`) | Logistics & Manufacturing model |
 | Capstone 2 | Indian Rupee financial analytics and risk score dashboard | Unsplash (`photo-1565373679107-344d38dbf734`) | FinTech & Financial Services model |
-| Capstone 3 | Indian clinical director reviewing healthcare clinic operations | Unsplash (`photo-1622253692010-333f2da6031d`) | Healthcare Systems model |
+| Capstone 3 | Enterprise cloud operations and software engineering telemetry dashboard | Unsplash (`photo-1504384308090-c894fdcc538d`) | Enterprise Technology & GCCs model |
 
 ## 5. Institutional Attribution & Trademark Notice
 - **TAPMI:** T. A. Pai Management Institute (Manipal Academy of Higher Education).
